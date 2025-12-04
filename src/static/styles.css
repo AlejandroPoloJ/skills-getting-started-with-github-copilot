@@ -78,13 +78,36 @@ section h3 {
   margin-top: 12px;
   padding-top: 12px;
   border-top: 1px solid #e0e0e0;
-}
-
-.participants-section ul {
-  margin-left: 20px;
-  margin-top: 8px;
-  list-style-type: disc;
-}
+  }
+  
+  /* Ocultar bullets y mostrar participantes en línea */
+  .participants-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 0.3em;
+  }
+  
+  .participant-item {
+    background: #f3f3f3;
+    border-radius: 16px;
+    padding: 0.2em 0.7em 0.2em 0.7em;
+    display: flex;
+    align-items: center;
+    font-size: 0.98em;
+    margin-right: 0.2em;
+  }
+  
+  .delete-icon {
+    cursor: pointer;
+    margin-left: 0.5em;
+    color: #c00;
+    font-size: 1.1em;
+    transition: color 0.2s;
+  }
+  .delete-icon:hover {
+    color: #e00;
+  }
 
 .participants-section li {
   margin-bottom: 5px;
